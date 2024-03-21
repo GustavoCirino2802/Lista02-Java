@@ -16,15 +16,15 @@ public class Exercicio1 {
 
     for (int i = 0; i < 5; i++ ){
         if (num[i] < media){
-            Prompt.imprimir("o" + (i + 1) + "º número é menor que a média!");
+            Prompt.imprimir("o " + (i + 1) + "º número é menor que a média!");
             Prompt.separador();
         }
         else if (num[i] > media){
-            Prompt.imprimir("o" + (i + 1) + "º número é maior que a média!");
+            Prompt.imprimir("o " + (i + 1) + "º número é maior que a média!");
             Prompt.separador();
         }
         else if (num[i] == media){
-            Prompt.imprimir("o" + (i + 1) + "º número é igual a média!");
+            Prompt.imprimir("o " + (i + 1) + "º número é igual a média!");
             Prompt.separador();
         }
     }
