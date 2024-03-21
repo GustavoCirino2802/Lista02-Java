@@ -12,6 +12,7 @@ public class Exercicio3 {
     }
 
     for (int i = 0; i < 5; i++) {
+
         Prompt.imprimir("O " + (i + 1) + "º" + " número do vetor é = " + dobro[i]);   
         Prompt.separador();
     }
