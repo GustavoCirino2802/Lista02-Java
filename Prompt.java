@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
  * Um classe utilitária para imprimir e ler textos, números inteiros e decimais
  * no prompt de comandos.
  * 
- * @version 1.0 Mar 2023
+ * @version 1.0 Mar 2023A
  * @author Geucimar Briatore
  */
 public class Prompt {

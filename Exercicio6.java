@@ -1,22 +1,31 @@
-public class Exercicio6 { 
-    
+public class Exercicio6 {
+
     public static void executar() {
-
-        Double nota[] = new Double[5];
-        Double peso[] = new Double[5];
-
-        for(int i = 0; i < 5; i++) {
-            Double nota[i] = Prompt.lerDecimal("Digite sua" + i + "º nota: ");
-            Double peso[i] = Prompt.lerDecimal("Digite o peso da nota" + i + ":");   
-            soma += peso[i];  
-        }
-
-        for(int i = 0; i < 5; i++) {
-            Double media = nota[i] * peso[i]
-        }
-
-
         
+        double[] notas = new double[5];
+        int[] pesos = new int[5];
+
+        for (int i = 0; i < 5; i++) {
+            notas[i] = Prompt.lerDecimal("Digite a nota " + (i + 1) + ": ");
+        }
+
+        for (int i = 0; i < 5; i++) {
+            pesos[i] = Prompt.lerInteiro("Digite o peso da nota " + (i + 1) + ": ");
+        }
+
+        double somaNotas = 0;
+        int somaPesos = 0;
+        for (int i = 0; i < 5; i++) {
+            somaNotas += notas[i] * pesos[i];
+            somaPesos += pesos[i];
+        }
+
+        double media = somaNotas / somaPesos;
+
+        Prompt.separador();
+        Prompt.imprimir("Média ponderada: " + media);
+        Prompt.separador();
+    }
 
     }
-}
+
