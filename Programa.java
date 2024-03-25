@@ -11,8 +11,8 @@ public class Programa {
         //Exercicio8.executar();
         //Exercicio9.executar();
         //Exercicio10.executar();
-        Exercicio11.executar();
-        //Exercicio12.executar();
+        //Exercicio11.executar();
+        Exercicio12.executar();
         //Exercicio13.executar();
         //Exercicio14.executar();
         //Exercicio15.executar();
