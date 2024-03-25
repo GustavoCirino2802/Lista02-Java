@@ -8,7 +8,7 @@ public class Exercicio15 {
         vetor[0] = lerInteiro("Número 1: ");
 
         for (int i = 1; i < 5; i++) {
-            vetor[i] = lerInteiroMaiorQueAnterior("Número " + (i + 1) + ": ", vetor[i - 1]);
+            vetor[i] = lerInteiroAnterior("Número " + (i + 1) + ": ", vetor[i - 1]);
         }
 
         Prompt.imprimir("Vetor preenchido:");
@@ -19,7 +19,7 @@ public class Exercicio15 {
         return Integer.parseInt(Prompt.lerLinha(mensagem));
     }
 
-    public static int lerInteiroMaiorQueAnterior(String mensagem, int anterior) {
+    public static int lerInteiroAnterior(String mensagem, int anterior) {
         int numero;
         do {
             numero = lerInteiro(mensagem);
